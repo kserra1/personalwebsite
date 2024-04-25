@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted]=useState(false);
+    console.log("test push")
 
 
     const handleSubmit= async (e)=>{

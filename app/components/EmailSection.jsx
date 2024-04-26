@@ -42,10 +42,10 @@ const EmailSection = () => {
                     Feel free to reach out to me via email or connect with me on LinkedIn.
                 </p>
                 <div className="socials flex flex-row gap-2">
-                    <Link href="https://github.com/kserra1">
+                    <Link href="https://github.com/kserra1" target='_blank'>
                         <Image src= {GithubIcon} alt="Github Icon" />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/kieran-serra/">
+                    <Link href="https://www.linkedin.com/in/kieran-serra/" target='_blank'>
                         <Image src= {LinkedInIcon} alt="LinkedIn Icon" />
                     </Link>
                 </div>

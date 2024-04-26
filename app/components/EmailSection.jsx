@@ -6,8 +6,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted]=useState(false);
-    console.log("test push")
-
 
     const handleSubmit= async (e)=>{
         e.preventDefault();
@@ -35,8 +33,7 @@ const EmailSection = () => {
     }
 
     return (
-        <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+        <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative" id="contact">
                 <div className="z-10">
                 <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -45,10 +42,10 @@ const EmailSection = () => {
                     Feel free to reach out to me via email or connect with me on LinkedIn.
                 </p>
                 <div className="socials flex flex-row gap-2">
-                    <Link href="https://github.com/kserra1">
+                    <Link href="https://github.com/kserra1" target='_blank'>
                         <Image src= {GithubIcon} alt="Github Icon" />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/kieran-serra/">
+                    <Link href="https://www.linkedin.com/in/kieran-serra/" target='_blank'>
                         <Image src= {LinkedInIcon} alt="LinkedIn Icon" />
                     </Link>
                 </div>
@@ -98,7 +95,7 @@ const EmailSection = () => {
                     </div>
                     <button 
                     type="submit"
-                    className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+                    className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full z-10"
                     >
                         Send Message
                     </button>

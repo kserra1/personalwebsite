@@ -34,7 +34,7 @@ const TAB_DATA=[
             </ul>
         )
     },
-    {
+  /*  {
         title: "Experience",
         id: "experience",
         content: (
@@ -44,6 +44,7 @@ const TAB_DATA=[
             </ul>
         )
     }
+    */
 ]
 
 
@@ -59,18 +60,16 @@ const handleTabChange=(id)=>{
 }
 
   return (
-  <section className="text-white">
+  <section className="text-white" id="about">
     <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src ="/images/about-image.png"  width={500} height={500} />
+        <Image src ="/images/ProgrammingImage.jpeg" alt="" width={800} height={600} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-            <p className="text-base lg:text-lg">I am a full stack web developer with a passion for creating
-                interactive clean and responsive websites. I have experience
-                working with TypeScript, React, Node.js, PostgreSQL, Python, and Git.
-                I am always eager to learn new technologies to expand my knowledge and 
-                skills. I enjoy working with teams and am excited to work with others to create
-                amazing projects.
-            </p>
+            <p className="text-base lg:text-lg">I am a full stack web developer dedicated to building quality software and clean 
+            websites for users. Specializing in TypeScript, React, Node.js, PostgreSQL, Python,
+            and Git, I ensure that my projects are scalable, maintainable, and efficient. I enjoy learning
+            and am quick to adapt to new technologies and frameworks. I do well in team settings and am
+            always looking to collaborate with others to develop innovative solutions.</p>
             <div className="flex flex-row justify-start mt-8">
                 <TabButton 
                 selectTab={()=>handleTabChange("skills")} 
@@ -91,7 +90,6 @@ const handleTabChange=(id)=>{
                 active={tab==="experience"}
                 >
                 {" "}
-                Experience{" "}
                 </TabButton>
                 </div>
             <div className="mt-8">{TAB_DATA.find((t)=>t.id===tab).content}</div>

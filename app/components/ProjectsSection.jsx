@@ -17,12 +17,12 @@ const projectsData=[
     },
     {
         id:2,
-        title: "To-Do List",
-        description: "To-do list application integrating user authentication for security while using React for frontend and Flask for backend",
-        image: "/images/projects/todolistimage.jpeg",
+        title: "Full Stack Personal Finance Application",
+        description: "Built a personal finance app using React & Django. Manages accounts, tracks balances, and facilitates transactions. (deployed on AWS EC2 Instance).",
+        image: "/images/projects/financeapp.png",
         tag: ["All", "Frontend", "Backend"],
-        gitUrl: "https://github.com/kserra1/Task-Manager",
-        previewUrl: "https://github.com/kserra1/Task-Manager"
+        gitUrl: "https://github.com/kserra1/personal-finance-app",
+        previewUrl: "https://github.com/kserra1/personal-finance-app"
     },
     {
         id:3,

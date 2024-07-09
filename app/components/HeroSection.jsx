@@ -26,7 +26,7 @@ const HeroSection = () => {
         // Same substring at the start will only be typed out once, initially
         'Kieran',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'A Web Developer',
+        'A Software Engineer',
         1000,
         'A Full Stack Developer',
         1000,
@@ -39,7 +39,7 @@ const HeroSection = () => {
     />
                 </h1>
             <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-              I am a computer science major with a passion in web development
+              I am a computer science major with a passion in software engineering
             </p>
             <div>
                 <a href="https://forms.gle/rXsAGkwRfPBgxt536" target="_blank">

@@ -11,11 +11,12 @@ const TAB_DATA=[
             <ul className="list-disc pl-2">
                 <li>Python</li>
                 <li>Typescript</li>
-                <li>C</li>
+                <li>JavaScript</li>
                 <li>Java</li>
-                <li>PostgreSQL</li>
-                <li>Node.js</li>
-                <li>React</li>
+                <li>C</li>
+                <li>R</li>
+                <li>Swift</li>
+       
             </ul>
         )
     },
@@ -31,6 +32,22 @@ const TAB_DATA=[
                 <li>Linear Algebra</li>
                 <li>Intro to Artificial Intelligence</li>
                 <li>Intro to Data Analysis</li>
+            </ul>
+        )
+    },
+    {
+        title: "Technologies",
+        id: "technologies",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Django</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>TensorFlow</li>
+                <li>AWS</li>
             </ul>
         )
     },
@@ -65,18 +82,19 @@ const handleTabChange=(id)=>{
         <Image src ="/images/ProgrammingImage.jpeg" alt="" width={800} height={600} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-            <p className="text-base lg:text-lg">I am a full stack web developer dedicated to building quality software and clean 
-            websites for users. Specializing in TypeScript, React, Node.js, PostgreSQL, Python,
-            and Git, I ensure that my projects are scalable, maintainable, and efficient. I enjoy learning
-            and am quick to adapt to new technologies and frameworks. I do well in team settings and am
-            always looking to collaborate with others to develop innovative solutions.</p>
+            <p className="text-base lg:text-lg">I am a passionate software engineer currently pursuing a Bachelor's degree 
+            in Computer Science at the University of Massachusetts Amherst. With a strong foundation in programming languages 
+            such as Python, Java, TypeScript, R, and C, I develop robust software solutions using technologies such as
+            React.js, Django, and databases such as MongoDB, and PostgreSQL. I am passionate about machine learning using technologies such as 
+            TensorFlow, pandas, and NumPy. I have experience leveraging AWS, Git, and CI/CD practices to deliver 
+            scalable software solutions.</p>
             <div className="flex flex-row justify-start mt-8">
                 <TabButton 
                 selectTab={()=>handleTabChange("skills")} 
                 active={tab==="skills"}
                 >
                 {" "}
-                Skills{" "}
+                Programming Languages{" "}
                 </TabButton>
                 <TabButton 
                 selectTab={()=>handleTabChange("education")} 
@@ -85,12 +103,14 @@ const handleTabChange=(id)=>{
                 {" "}
                 Education{" "}
                 </TabButton>
-                <TabButton 
-                selectTab={()=>handleTabChange("experience")} 
-                active={tab==="experience"}
+                <TabButton
+                selectTab={()=>handleTabChange("technologies")}
+                active={tab==="technologies"}
                 >
                 {" "}
+                Technologies{" "}
                 </TabButton>
+             
                 </div>
             <div className="mt-8">{TAB_DATA.find((t)=>t.id===tab).content}</div>
         </div>

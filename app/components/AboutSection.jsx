@@ -82,7 +82,7 @@ const handleTabChange=(id)=>{
         <Image src ="/images/ProgrammingImage.jpeg" alt="" width={800} height={600} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-            <p className="text-base lg:text-lg">I am a passionate software engineer currently pursuing a Bachelor's degree 
+            <p className="text-base lg:text-lg">I am a passionate software engineer currently pursuing a Bachelor&apos;s degree 
             in Computer Science at the University of Massachusetts Amherst. With a strong foundation in programming languages 
             such as Python, Java, TypeScript, R, and C, I develop robust software solutions using technologies such as
             React.js, Django, and databases such as MongoDB, and PostgreSQL. I am passionate about machine learning using technologies such as 
